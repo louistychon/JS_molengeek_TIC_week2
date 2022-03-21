@@ -1,9 +1,3 @@
-function paragraphes(){
-    let para [] = document.getElementsByClassName('intro');
-    let i = 0;
-    while(para[i]){
-    para.innerHTML = "coucou petite perruche";
-    para[i++];
-}
-
-paragraphes();
+let para = document.getElementsByClassName('intro')[0]; // le 0 cible le premier element du tableau car il existe plusieurs paragraphe avec la classe intro.
+para.innerHTML = "coucou petite perruche";
+console.log(para);
