@@ -1,0 +1,1 @@
+Faites un message d'accueil "Bonne journée" si l'heure est supérieur à 18h00 :

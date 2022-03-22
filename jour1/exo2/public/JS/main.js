@@ -1,0 +1,1 @@
+let change = document.getElementsByTagName('p')[0].innerHTML = "Bonjour";
