@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="derniers_articles p-4">
+            <h1 class="flex items-center justify-center text-xl text-white"><i class="fa-solid fa-star"></i> Découvrez
+                l'astrologie... <i class="fa-solid fa-star"></i></h1>
+            <div class="flex items-center justify-center p-10">
+                <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl">
+                    <!-- Tile 1 -->
+                    <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
+                        <div class="img-vignette h-40 bg-gray-400 rounded-lg p-2"><a href=""><img
+                                    src="public/img/astrologie.jpg"></a></div>
+                        <div class="flex flex-col items-start mt-4">
+                            <h4 class="text-xl font-semibold">Pourquoi l'astrologie est-elle importante ?</h4>
+                            <p class="text-sm">Découvrons ce qu'est l'astrologie!</p>
+                            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase"
+                                href="#">Voir
+                                l'article</a>
+                        </div>
+                    </div>
+                    <!-- Tile 2 -->
+                    <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
+                        <div class="img-vignette h-40 bg-gray-400 rounded-lg"><a href=""><img
+                                    src="public/img/galaxie.jpg"></a></div>
+                        <div class="flex flex-col items-start mt-4">
+                            <h4 class="text-xl font-semibold">Le système solaire</h4>
+                            <p class="text-sm">Apprenez les bases sur le système solaire et participez à un petit quizz
+                            </p>
+                            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase"
+                                href="#">Voir
+                                l'article</a>
+                        </div>
+                    </div>
+                    <!-- Tile 3 -->
+                    <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
+                        <div class="img-vignette h-40 bg-gray-400 rounded-lg"><a href=""><img
+                                    src="public/img/etoiles.jpg"></a></div>
+                        <div class="flex flex-col items-start mt-4">
+                            <h4 class="text-xl font-semibold">Comment observer les étoiles ?</h4>
+                            <p class="text-sm">Découvrez le meilleur matériel pour observer les astres.</p>
+                            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase"
+                                href="#">Voir
+                                l'article</a>
+                        </div>
+                    </div>
+                    <!-- Tile 4 -->
+                    <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
+                        <div class="img-vignette h-40 bg-gray-400 rounded-lg"><a href=""><img
+                                    src="public/img/etoile_filante.jpg"></a></div>
+                        <div class="flex flex-col items-start mt-4">
+                            <h4 class="text-xl font-semibold">Qu'est-ce qu'une étoile filante ?</h4>
+                            <p class="text-sm">Il existe bien des discussions sur la nature des étoiles filantes,
+                                dechiffrons cela ensemble.</p>
+                            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase"
+                                href="#">Voir
+                                l'article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="container">
+                <div id="toggleContainer">
+                    <label>Carousel</label>
+                    <div id="toggle">
+                        <div id="outer3">
+                            <div id="slider3"></div>
+                        </div>
+                        <label>Tiles</label>
+                    </div>
+                </div>
+                <div id="galleryView">
+                    <div id="galleryContainer">
+                        <div id="leftView"></div>
+                        <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+                        <a id="linkTag">
+                            <div id="mainView"></div>
+                        </a>
+                        <div id="rightView"></div>
+                        <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+                    </div>
+                </div>
+                <div id="tilesView">
+                    <div id="tilesContainer"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="public/js/carousel.js"></script>
+    <script src="public/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/0f04e7ed22.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
