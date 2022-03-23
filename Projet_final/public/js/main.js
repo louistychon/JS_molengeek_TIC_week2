@@ -20,5 +20,6 @@ function link(){
 }
 
 function history(){
-    let length = window.history.length;
-document.getElementById("demo").innerHTML = length;}
+    let length = window.history();
+    console.log(window.history());
+    document.getElementById("demo").innerHTML = length;}
