@@ -1,0 +1,1 @@
+# Créez un programme qui demande à l'utilisateur un nombre et qui affiche le carré du nombre calculé dans une function
