@@ -6,94 +6,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
 " rel="stylesheet">
+
 </head>
 
 <body>
-    <header><nav class="bg-gray-800">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div class="relative flex items-center justify-between h-16">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    <!-- Mobile menu button-->
-                    <button type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <!--
+    <header>
+        <nav class="bg-gray-800">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div class="relative flex items-center justify-between h-16">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <!--
           Icon when menu is closed.
 
           Heroicon name: outline/menu
 
           Menu open: "hidden", Menu closed: "block"
         -->
-                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                        <!--
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <!--
           Icon when menu is open.
 
           Heroicon name: outline/x
 
           Menu open: "block", Menu closed: "hidden"
         -->
-                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex-shrink-0 flex items-center">
-                        <img class="block lg:hidden h-8 w-auto" src="../img/cardano_logo.png" alt="Workflow">
-                        <img class="hidden lg:block h-8 w-auto" src="../img/cardano_logo.png" alt="Workflow">
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
                     </div>
-                    <div class="hidden sm:block sm:ml-6">
-                        <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="../../index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-                                aria-current="page">Accueil</a>
+                    <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex-shrink-0 flex items-center">
+                            <a href="../../index.html"><img class="block lg:hidden h-8 w-auto"
+                                    src="../img/cardano_logo.png" alt="Workflow"></a>
+                            <a href="../../index.html"></a><img class="hidden lg:block h-8 w-auto"
+                                src="../img/cardano_logo.png" alt="Workflow"></a>
+                        </div>
+                        <div class="hidden sm:block sm:ml-6">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="../../index.html"
+                                    class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    aria-current="page">Accueil</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Articles</a>
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Articles</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Article
-                                invité</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <button type="button"
-                        class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                        <span class="sr-only">View notifications</span>
-                        <!-- Heroicon name: outline/bell -->
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                        </svg>
-                    </button>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <button type="button"
+                            class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                            <span class="sr-only">View notifications</span>
+                            <!-- Heroicon name: outline/bell -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </button>
 
-                    <!-- Profile dropdown -->
-                    <div class="ml-3 relative">
-                        <div>
-                            <button type="button"
-                                class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                                <span class="sr-only">Open user menu</span>
-                                <img class="h-8 w-8 rounded-full"
-                                    src="https://avatars.githubusercontent.com/u/91664267?v=4" alt="">
-                            </button>
-                        </div>
+                        <!-- Profile dropdown -->
+                        <div class="ml-3 relative">
+                            <div>
+                                <button type="button"
+                                    class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="h-8 w-8 rounded-full"
+                                        src="https://avatars.githubusercontent.com/u/91664267?v=4" alt="">
+                                </button>
+                            </div>
 
-                        <!--
+                            <!--
           Dropdown menu, show/hide based on menu state.
 
           Entering: "transition ease-out duration-100"
@@ -103,50 +105,58 @@
             From: "transform opacity-100 scale-100"
             To: "transform opacity-0 scale-95"
         -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="../../index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-                    aria-current="page">Accueil</a>
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="../../index.html"
+                        class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                        aria-current="page">Accueil</a>
 
-                <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Article</a>
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Article</a>
 
-                <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Article
-                    invité</a>
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Article
+                        invité</a>
 
+                </div>
             </div>
-        </div>
-    </nav></header>
+        </nav>
+    </header>
     <main>
+
+        <div class="slider"></div>
+        <section class="container_slider">
+            <div class="hero flex content-center">
+                <h1>Découvre l'astronomie !</h1>
+                <img src="../img/slider/1.jpg" alt="">
+            </div>
+        </section>
         <section class="derniers_articles p-4">
-            <h1 class="flex items-center justify-center text-xl text-white"><i class="fa-solid fa-star"></i> Découvrez
-                l'astrologie... <i class="fa-solid fa-star"></i></h1>
-            <div class="flex-col items-center justify-center p-10">
+            <div class="flex items-center justify-center p-10">
                 <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl">
                     <!-- Tile 1 -->
                     <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
                         <div class="img-vignette h-40 bg-gray-400 rounded-lg p-2"><a href=""><img
-                                    src="public/img/astrologie.jpg"></a></div>
+                                    src="../img/astrologie.jpg"></a></div>
                         <div class="flex flex-col items-start mt-4">
-                            <h4 class="text-xl font-semibold">Pourquoi l'astrologie est-elle importante ?</h4>
-                            <p class="text-sm">Découvrons ce qu'est l'astrologie!</p>
+                            <h4 class="text-xl font-semibold">Pourquoi l'astronomie est-elle importante ?</h4>
+                            <p class="text-sm">Découvrons ce qu'est l'astronomie!</p>
                             <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase"
-                                href="#">Voir
+                                href="astrologie.html">Voir
                                 l'article</a>
                         </div>
                     </div>
                     <!-- Tile 2 -->
                     <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
                         <div class="img-vignette h-40 bg-gray-400 rounded-lg"><a href=""><img
-                                    src="public/img/galaxie.jpg"></a></div>
+                                    src="../img/galaxie.jpg"></a></div>
                         <div class="flex flex-col items-start mt-4">
                             <h4 class="text-xl font-semibold">Le système solaire</h4>
                             <p class="text-sm">Apprenez les bases sur le système solaire et participez à un petit quizz
@@ -159,7 +169,7 @@
                     <!-- Tile 3 -->
                     <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
                         <div class="img-vignette h-40 bg-gray-400 rounded-lg"><a href=""><img
-                                    src="public/img/etoiles.jpg"></a></div>
+                                    src="../img/etoiles.jpg"></a></div>
                         <div class="flex flex-col items-start mt-4">
                             <h4 class="text-xl font-semibold">Comment observer les étoiles ?</h4>
                             <p class="text-sm">Découvrez le meilleur matériel pour observer les astres.</p>
@@ -171,7 +181,7 @@
                     <!-- Tile 4 -->
                     <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
                         <div class="img-vignette h-40 bg-gray-400 rounded-lg"><a href=""><img
-                                    src="public/img/etoile_filante.jpg"></a></div>
+                                    src="../img/etoile_filante.jpg"></a></div>
                         <div class="flex flex-col items-start mt-4">
                             <h4 class="text-xl font-semibold">Qu'est-ce qu'une étoile filante ?</h4>
                             <p class="text-sm">Il existe bien des discussions sur la nature des étoiles filantes,
@@ -184,37 +194,14 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div id="container">
-                <div id="toggleContainer">
-                    <label>Carousel</label>
-                    <div id="toggle">
-                        <div id="outer3">
-                            <div id="slider3"></div>
-                        </div>
-                        <label>Tiles</label>
-                    </div>
-                </div>
-                <div id="galleryView">
-                    <div id="galleryContainer">
-                        <div id="leftView"></div>
-                        <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
-                        <a id="linkTag">
-                            <div id="mainView"></div>
-                        </a>
-                        <div id="rightView"></div>
-                        <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
-                    </div>
-                </div>
-                <div id="tilesView">
-                    <div id="tilesContainer"></div>
-                </div>
-            </div>
-        </section>
+
+
     </main>
     <footer></footer>
-    <script src="public/js/carousel.js"></script>
-    <script src="public/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/main.js"></script>
     <script src="https://kit.fontawesome.com/0f04e7ed22.js" crossorigin="anonymous"></script>
 </body>
 
